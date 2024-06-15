@@ -19,6 +19,7 @@
 		{
 			"src": "/sideProjects",
 			"dest": "/"
-		}
+		},
+		{ "src": "/(.*)", "status": 404, "dest": "/" }
 	]
 }
