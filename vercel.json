@@ -19,10 +19,6 @@
 		{
 			"src": "/sideProjects",
 			"dest": "/"
-		},
-		{
-			"src": "(.*)",
-			"dest": "/"
 		}
 	]
 }
