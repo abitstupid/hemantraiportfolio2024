@@ -1,12 +1,12 @@
+import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar.jsx";
-import styles from "../styles/home.module.css";
-import data from "../data.json";
 import Skills from "../components/Skills.jsx";
 import ContactSection from "../components/ContactSection.jsx";
 import Footer from "../components/Footer.jsx";
 import Featured from "../components/Featured.jsx";
 import CTA from "../components/CTA.jsx";
-import { useEffect, useState } from "react";
+import styles from "../styles/home.module.css";
+import data from "../data.json";
 
 // 3d SPLINE
 

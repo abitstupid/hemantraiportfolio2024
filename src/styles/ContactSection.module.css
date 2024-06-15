@@ -97,15 +97,6 @@ textarea {
 	display: block;
 }
 
-@media screen and (min-width: 1400px) {
-}
-
-@media screen and (max-width: 1399px) {
-}
-
-@media screen and (max-width: 1200px) {
-}
-
 @media screen and (max-width: 992px) {
 	.one {
 		flex-basis: 75%;
