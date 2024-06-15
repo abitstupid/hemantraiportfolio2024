@@ -1,0 +1,72 @@
+.aboutWrapper {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.aboutMeImgWrapper {
+	flex-basis: 20%;
+	height: 500px;
+}
+
+.aboutMeImg {
+	width: 100%;
+	object-fit: contain;
+}
+
+.aboutName {
+	color: var(--black);
+	font-size: var(--size-20);
+	font-weight: bold;
+}
+
+.aboutNameExtend {
+	color: var(--secondary-black);
+	font-size: var(--size-16);
+	font-weight: normal;
+
+	display: inline-block;
+	padding-left: 16px;
+}
+
+.downloadCvWrapper a {
+	margin-left: 0;
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (max-width: 1399px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+	.aboutWrapper {
+		flex-direction: column;
+	}
+
+	.headingAbout {
+		text-align: left !important;
+	}
+
+	.aboutMeImgWrapper {
+		height: 200px;
+		width: 100%;
+	}
+
+	.aboutMeImg {
+		width: 50%;
+		height: 50%;
+	}
+
+	.aboutName {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 576px) {
+}

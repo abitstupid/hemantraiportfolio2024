@@ -1,0 +1,128 @@
+@keyframes fadeIn {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes zoomIn {
+	0% {
+		transform: scale(0.7);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.workCardSmallWrapper {
+	width: 100%;
+	max-width: 1280px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--size-24);
+}
+
+@supports (display: grid) {
+	.workCardSmallWrapper {
+		width: 100%;
+		max-width: 1280px;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(300px, 1fr));
+		gap: var(--size-24);
+	}
+}
+
+.workCardSmall {
+	flex: 1 1 48%;
+	justify-content: flex-start;
+	height: 380px;
+
+	background: var(--primary-color);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+
+	position: relative;
+	z-index: 9;
+}
+
+.workCardSmall .workCardSmallImgWrapper {
+	width: 100%;
+	height: 75%;
+
+	border: 3px solid var(--black);
+	overflow: hidden;
+}
+
+.workCardSmallImgWrapper .workCardSmallImg {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+
+	transition: all 0.5s;
+}
+
+.workCardSmall:hover .workCardSmallImg {
+	transform: scale(1.2);
+}
+
+.cardContentWrapper {
+	width: 100%;
+	height: 25%;
+
+	word-break: normal;
+	align-items: flex-start;
+}
+
+.cardContent * {
+	list-style-type: inherit;
+	text-decoration: inherit;
+}
+
+.cardContentText {
+	font-size: var(--size-14);
+}
+
+.cardContentLinks {
+	width: 100%;
+	justify-content: flex-end;
+	gap: var(--size-16);
+
+	font-size: var(--size-14);
+	margin-top: var(--size-8);
+}
+
+.cardContentLinks svg {
+	height: var(--size-20);
+	width: var(--size-20);
+	transition: all 0.3s;
+}
+
+.cardContentLinks svg:hover {
+	fill: var(--accent-color);
+}
+
+@media screen and (max-width: 992px) {
+	.workCardSmallWrapper {
+		width: 100%;
+		max-width: 1280px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--size-24);
+	}
+
+	@supports (display: grid) {
+		.workCardSmallWrapper {
+			width: 100%;
+			max-width: 1280px;
+			display: grid;
+			grid-template-columns: repeat(1, minmax(300px, 1fr));
+			gap: var(--size-24);
+		}
+	}
+}
+
+@media screen and (max-width: 762px) {
+}

@@ -1,0 +1,190 @@
+{
+	"nav": [
+		{ "serial": 0, "title": "home", "url": "/" },
+		{ "serial": 1, "title": "work", "url": "/work" },
+		{ "serial": 2, "title": "about", "url": "/about" },
+		{ "serial": 3, "title": "contact", "url": "/contact" }
+	],
+	"authorInfo": {
+		"img": { "url": "/url", "alt": "Hemant Rai" },
+		"name": "Hemant Rai",
+		"description": "I'm a full stack developer"
+	},
+	"skills": [
+		{
+			"type": {
+				"title": "basic",
+				"skills": [
+					{
+						"serial": 0,
+						"icon": "./assets/images/skills/html.svg",
+						"title": "html"
+					},
+					{
+						"serial": 1,
+						"icon": "./assets/images/skills/css.svg",
+						"title": "css"
+					},
+					{
+						"serial": 2,
+						"icon": "./assets/images/skills/javascript.svg",
+						"title": "javascript"
+					},
+					{
+						"serial": 2,
+						"icon": "./assets/images/skills/react.svg",
+						"title": "react js"
+					}
+				]
+			}
+		},
+		{
+			"type": {
+				"title": "others in css",
+				"skills": [
+					{
+						"serial": 0,
+						"icon": "/assets/images/skills/bootStrap.svg",
+						"title": "bootstrap"
+					},
+					{
+						"serial": 1,
+						"icon": "/assets/images/skills/sass.svg",
+						"title": "sass"
+					},
+					{
+						"serial": 2,
+						"icon": "/assets/images/skills/openProps.png",
+						"title": "open props"
+					}
+				]
+			}
+		}
+	],
+	"aboutMe": [
+		{
+			"type": {
+				"title": "education",
+				"cred": [
+					{
+						"credName": "B.S. (Physical Science)",
+						"icon": "url",
+						"link": "url"
+					}
+				]
+			}
+		},
+		{
+			"type": {
+				"title": "certifications",
+				"cred": [
+					{
+						"credName": "Introduction to UX design: Aquent Gynmasium",
+						"icon": "url",
+						"link": "url"
+					},
+					{
+						"credName": "Introduction to UX design: Aquent Gynmasium",
+						"icon": "url",
+						"link": "url"
+					}
+				]
+			}
+		}
+	],
+	"projects": [
+		{
+			"serial": 0,
+			"title": "city reads",
+			"img": "/assets/images/projects/cityReadsDesktop.png",
+			"tags": ["featured", "large", "html", "css", "react js"],
+			"url": "https://yashodhankaliaux.vercel.app/",
+			"gitUrl": "https://www.google.com",
+			"visit": "/cityReads",
+			"description": "aaaaaaaaaa sss d d d judjdj  djsioadoaisjdas  a sdjklasd  husdh hj dsd  js kdj"
+		},
+		{
+			"serial": 1,
+			"title": "brayan portfolio",
+			"img": "/assets/images/projects/brayanDesktop.png",
+			"tags": ["featured", "html", "css", "javascript"],
+			"url": "https://brayanraihome.vercel.app/",
+			"gitUrl": "https://github.com/abitstupid/brayan_rai_portfolio",
+			"description": "A minimalistic, modular portfolio made using vanilla JS.Tackled challenges like creating a matrix rain, responsive layout, adding various micro-interactive animations."
+		},
+		{
+			"serial": 2,
+			"title": "b.cuz cafe",
+			"img": "/assets/images/projects/bcuzMobile.png",
+			"tags": ["featured", "html", "css", "react js", "next"],
+			"url": "https://bcuzcafe.vercel.app/",
+			"gitUrl": "https://www.google.com",
+			"description": "Created a Web App using React where users can browser multiple type of foods. Implemented Sorting, Filtering, Mapping, Carousel and many more features."
+		},
+		{
+			"serial": 3,
+			"title": "starter css library",
+			"img": "/assets/images/projects/cssLibraryDesktop.png",
+			"tags": ["html", "css", "sass", "react js"],
+			"url": "https://startercsslibrary.vercel.app/",
+			"gitUrl": "https://github.com/abitstupid/starter-css-library",
+			"description": "A starter CSS library made using SCSS. Used SCSS mixins, functions, loops and sass methods to optimize the code."
+		},
+		{
+			"serial": 4,
+			"title": "ux ortfolio",
+			"img": "/assets/images/projects/ykPortfolioDesktop.png",
+			"tags": ["html", "css", "javascript"],
+			"url": "https://yashodhankaliaux.vercel.app/",
+			"gitUrl": "https://github.com/abitstupid/ux-portfolio",
+			"description": "Responsive, minimalistic portfolio made for a UX designer. Used CSS variables, Flexbox, Grid layout , keyframe animations."
+		}
+	],
+	"sideProjects": [
+		{
+			"serial": 0,
+			"title": "3d tile effect",
+			"img": "/assets/images/projects/tiltedTile.png",
+			"tags": ["html", "css", "react js"],
+			"url": "https://3dtileeffect.vercel.app/",
+			"gitUrl": "https://github.com/abitstupid/3dTileEffect",
+			"description": "aaaaaaaaaa sss d d d judjdj  djsioadoaisjdas  a sdjklasd  husdh hj dsd  js kdj"
+		},
+		{
+			"serial": 1,
+			"title": "neumorphic calculator",
+			"img": "/assets/images/projects/neumorphicCalc.png",
+			"tags": ["html", "css", "javascript"],
+			"url": "https://neumorphiccalculator.vercel.app/",
+			"gitUrl": "https://github.com/abitstupid/calculator-neumorphism",
+			"description": "A minimalistic, modular portfolio made using vanilla JS.Tackled challenges like creating a matrix rain, responsive layout, adding various micro-interactive animations."
+		},
+		{
+			"serial": 3,
+			"title": "single page gaming form",
+			"img": "/assets/images/projects/dividedTVC.png",
+			"tags": ["html", "css", "javascript"],
+			"url": "https://dividedvalorant.vercel.app/",
+			"gitUrl": "https://github.com/abitstupid/dividedtvc",
+			"description": "Created a Web App using React where users can browser multiple type of foods. Implemented Sorting, Filtering, Mapping, Carousel and many more features."
+		},
+		{
+			"serial": 3,
+			"title": "aesthetic stopwatch",
+			"img": "/assets/images/projects/stopwatch.png",
+			"tags": ["html", "css", "javascript"],
+			"url": "https://aestheticstopwatch.vercel.app/",
+			"gitUrl": "https://github.com/abitstupid/stopwatch",
+			"description": "dddddddddd"
+		},
+		{
+			"serial": 4,
+			"title": "4 themed image gallery",
+			"img": "/assets/images/projects/imageGallery.png",
+			"tags": ["html", "css", "javascript"],
+			"url": "https://fourthemeimagegallery.vercel.app/",
+			"gitUrl": "https://github.com/abitstupid/image-gallery",
+			"description": "dddddddddd"
+		}
+	]
+}

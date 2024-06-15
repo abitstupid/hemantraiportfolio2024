@@ -1,0 +1,16 @@
+.work {
+	width: 100%;
+}
+
+.headingSideProject {
+	max-width: 1400px;
+	margin-inline: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: 762px) {
+	.headingWork {
+		text-align: left;
+	}
+}

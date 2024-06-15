@@ -1,0 +1,109 @@
+.footerWrapper {
+	position: relative;
+
+	width: 100%;
+	height: 240px;
+	background: var(--accent-color);
+
+	overflow: hidden;
+}
+
+.footerName {
+	font-size: 5rem;
+	color: var(--primary-color);
+
+	position: absolute;
+	top: -16px;
+	left: 0;
+}
+
+.displayImg {
+	height: 100%;
+	position: absolute;
+	right: -16px;
+	top: 0;
+}
+
+.displayImg svg {
+	height: 100%;
+}
+
+.socialLinks {
+	height: 100%;
+	width: 100%;
+
+	justify-content: flex-start;
+	gap: var(--size-24);
+
+	max-width: 1280px;
+}
+
+.socialMedia {
+	gap: var(--size-8);
+}
+
+.mail {
+	height: var(--size-48);
+
+	font-size: 1.5rem;
+	color: var(--primary-color);
+
+	padding-left: var(--size-16);
+	padding-right: var(--size-16);
+
+	background: var(--black);
+
+	transition: 0.3s ease-in-out;
+}
+
+.mail:hover {
+	color: var(--accent-color);
+	font-weight: normal;
+}
+
+.linkedIn,
+.git {
+	background: var(--primary-color);
+}
+
+.footerIcon {
+	height: var(--size-48);
+	width: var(--size-48);
+
+	transition: 0.3s ease-in-out;
+}
+
+.footerIcon:hover {
+	background-color: var(--black);
+}
+
+.footerIcon svg {
+	fill: var(--black);
+	transition: 0.3s ease-in-out;
+
+	height: 32px;
+	width: 32px;
+}
+
+@media screen and (max-width: 768px) {
+	.socialLinks {
+		height: auto;
+		flex-direction: column;
+		gap: var(--size-16);
+	}
+
+	.mail {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.footerName {
+		font-size: 12vw;
+	}
+
+	.displayImg {
+		display: none;
+		visibility: hidden;
+	}
+}

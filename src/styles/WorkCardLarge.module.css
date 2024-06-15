@@ -1,0 +1,130 @@
+@keyframes fadeIn {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes zoomIn {
+	0% {
+		transform: scale(0.7);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.workCardLargeWrapper {
+	width: 100%;
+}
+
+.workCardLarge {
+	width: inherit;
+	height: 350px;
+	background: var(--black);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+
+	position: relative;
+	z-index: 9;
+}
+
+.workCardLarge .workCardLargeImg {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	height: 100%;
+	object-fit: contain;
+
+	filter: brightness(60%);
+}
+
+.cardContentWrapper {
+	width: 90%;
+	max-width: 1280px;
+
+	display: flex;
+	flex-direction: row;
+	gap: var(--size-12);
+	flex-wrap: no-wrap;
+	align-items: flex-end;
+
+	position: absolute;
+	left: 50%;
+	bottom: calc(-1 * 2 * var(--size-48));
+	transform: translate(-50%, 0);
+}
+
+.cardContent {
+	width: 462px;
+
+	background: var(--white);
+
+	list-style-type: none;
+	text-decoration: none;
+
+	padding: var(--size-16);
+	border: 2px solid var(--black);
+
+	font-size: var(--size-14);
+	z-index: 8;
+}
+
+.cardContent * {
+	list-style-type: inherit;
+	text-decoration: inherit;
+}
+
+.cardButtonsWrapper {
+	margin-top: var(--size-12);
+}
+
+.cardButtons {
+	justify-content: flex-end;
+	gap: var(--size-20);
+}
+
+.cardButtons svg {
+	height: var(--size-20);
+	width: var(--size-20);
+	transition: all 0.3s;
+}
+
+.cardButtons svg:hover {
+	fill: var(--accent-color);
+}
+
+.cardViewProjectBtn {
+	width: 50%;
+	height: var(--size-64);
+	background: var(--black);
+	color: white;
+	font-size: 1.4rem;
+
+	text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+	.cardContentWrapper {
+		flex-direction: column;
+		gap: var(--size-12);
+		align-items: flex-start;
+
+		bottom: calc(-1 * 2 * var(--size-48));
+	}
+
+	.cardViewProjectBtn,
+	.cardContent {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}

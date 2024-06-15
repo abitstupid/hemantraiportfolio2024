@@ -1,0 +1,22 @@
+.hoverProjectsWrapper {
+	position: absolute;
+	z-index: 99;
+
+	width: 40%;
+
+	padding: var(--size-20);
+
+	background: var(--black);
+	border: 3px solid var(--white);
+	color: var(--primary-color);
+	list-style-type: none;
+}
+
+.hoverProjectsWrapper > * {
+	list-style-type: inherit;
+}
+
+.hoverProjectsHeading {
+	margin-bottom: var(--size-8);
+	font-size: 1rem;
+}
