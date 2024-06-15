@@ -22,9 +22,10 @@ export default function ContactSection() {
 		<>
 			<form
 				className={`${styles.contactWrapper} marginSectionBottom paddingInlineBody flex`}
-				action="https://formsubmit.co/thodabewakoofvalorant@gmail.com"
+				action="https://formsubmit.co/e6c56413db068338cb5f6a3f7dd5a33a"
 				method="POST"
-				_captcha="true"
+				name="_captcha"
+				value="true"
 			>
 				{/* LEFT */}
 				<div className={`${styles.one} ${styles.formSection} fontBody`}>

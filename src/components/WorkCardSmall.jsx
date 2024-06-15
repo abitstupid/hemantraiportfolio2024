@@ -26,9 +26,11 @@ export default function WorkCardSmall(props) {
 								<div
 									className={`${styles.workCardSmallImgWrapper} center`}
 									style={{
-										backgroundColor: "#f0f0f0",
+										backgroundColor: !sideProjects
+											? "#1651f3"
+											: "#f0f0f0",
 										backgroundImage: !sideProjects
-											? `url("../assets/images/gradientBlue.png")`
+											? `radial-gradient(at 28% 0%, hsla(203, 100%, 46%, 1) 0px, transparent 50%), radial-gradient(at 91% 5%, hsla(191, 100%, 23%, 1) 0px, transparent 50%), radial-gradient(at 59% 56%, hsla(225, 100%, 9%, 1) 0px, transparent 50%), radial-gradient(at 10% 85%, hsla(191, 100%, 30%, 1) 0px, transparent 50%), radial-gradient(at 14% 27%, hsla(218, 100%, 35%, 1) 0px, transparent 50%), radial-gradient(at 37% 56%, hsla(220, 100%, 7%, 1) 0px, transparent 50%), radial-gradient(at 1% 64%, hsla(192, 100%, 29%, 1) 0px, transparent 50%)`
 											: "",
 										backgroundSize: "cover",
 										backgroundRepeat: "no-repeat",

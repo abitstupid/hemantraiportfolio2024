@@ -1,6 +1,6 @@
 import styles from "../styles/Featured.module.css";
 import data from "../data.json";
-import { useRef } from "react";
+import { Suspense, useRef } from "react";
 
 export default function Featured() {
 	const projectRef = useRef(null);
@@ -28,15 +28,19 @@ export default function Featured() {
 									className={`${styles.project}  flex fontDisplay pointer`}
 									ref={projectRef}
 								>
-									<div
-										className={`${styles.projectImgWrapper}`}
-										style={{
-											background: `url(${item.img})`,
-											backgroundPosition: "center",
-											backgroundSize: "contain",
-											backgroundRepeat: "no-repeat",
-										}}
-									></div>
+									<Suspense
+										fallback={<div>Loading img..</div>}
+									>
+										<div
+											className={`${styles.projectImgWrapper}`}
+											style={{
+												background: `url(${item.img})`,
+												backgroundPosition: "center",
+												backgroundSize: "contain",
+												backgroundRepeat: "no-repeat",
+											}}
+										></div>
+									</Suspense>
 									<p className={`${styles.projectTitle}`}>
 										{item.title}
 									</p>

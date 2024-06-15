@@ -13,7 +13,6 @@
 	width: 100%;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	gap: var(--size-16);
 
 	position: relative;
 }
@@ -70,12 +69,40 @@
 .skillCard:hover {
 	background: var(--black);
 	color: var(--white);
-	transform: scale(1.5);
+	transform: scale(1.1);
 	border-radius: var(--size-18);
 }
 
 .skillCard:hover::before {
-	background: url("/assets/images/gradientBlue.png");
+	/* background: url("/assets/images/gradientBlue.png"); */
+	background-color: hsla(224, 90%, 62%, 1);
+	background-image: radial-gradient(
+			at 28% 0%,
+			hsla(203, 100%, 56%, 1) 0px,
+			transparent 50%
+		),
+		radial-gradient(at 91% 5%, hsla(191, 100%, 33%, 1) 0px, transparent 50%),
+		radial-gradient(
+			at 59% 56%,
+			hsla(225, 100%, 19%, 1) 0px,
+			transparent 50%
+		),
+		radial-gradient(
+			at 10% 85%,
+			hsla(191, 100%, 40%, 1) 0px,
+			transparent 50%
+		),
+		radial-gradient(
+			at 14% 27%,
+			hsla(218, 100%, 45%, 1) 0px,
+			transparent 50%
+		),
+		radial-gradient(
+			at 37% 56%,
+			hsla(220, 100%, 17%, 1) 0px,
+			transparent 50%
+		),
+		radial-gradient(at 1% 64%, hsla(192, 100%, 39%, 1) 0px, transparent 50%);
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: background 0.4s;
@@ -97,6 +124,7 @@
 @media screen and (max-width: 762px) {
 	.skillCardSection {
 		justify-content: space-between;
+		gap: var(--size-16);
 	}
 
 	.skillCard:hover {

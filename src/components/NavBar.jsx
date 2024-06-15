@@ -17,7 +17,7 @@ export default function NavBar() {
 		: `${styles.navLinkWrapper} ${styles.navLinkWrapperCls}`;
 	return (
 		<>
-			<nav className={`${classNameNav} flex`}>
+			<nav className={`${classNameNav} flex backgroundGradient`}>
 				<div className={`${styles.clsbtnWrapper} pointer`}>
 					{isOpen ? (
 						<IoMdClose

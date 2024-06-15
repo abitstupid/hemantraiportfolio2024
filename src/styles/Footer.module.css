@@ -85,6 +85,10 @@
 	width: 32px;
 }
 
+.footerIcon:hover svg {
+	fill: var(--accent-color);
+}
+
 @media screen and (max-width: 768px) {
 	.socialLinks {
 		height: auto;
